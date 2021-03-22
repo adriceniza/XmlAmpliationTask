@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#arrow{
+    opacity: 1;
+    transition: all 300ms;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    transition: 1s;
+}
+
+html{
+    font-size: 10px;
+
+    scroll-behavior: smooth;
+}
+
+.contact{
+    position: relative;
+    float: right;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-wrapper{
+    text-align: center;
+}
+
+.headline{
+    font-size: 15rem;
+    font-family: sofia-pro;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .24em;
+    line-height: 5.5;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .headline{
+        font-size: 12rem;
+        font-family: sofia-pro;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: .24em;
+        line-height: 5;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    #intro {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+    }
+    #intro #divmed p {
+        font-size: 26px;
+        word-spacing: 1.5px;
+    }
+
+    #intro #divmed{
+        text-align: center;
+        margin: 10px;
+    }
+
+    .APOD {
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+    
+
+ }
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+    .headline{
+        font-size: 10rem;
+        font-family: sofia-pro;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: .24em;
+        line-height: 8em;
+        text-transform: uppercase;
+        color: white;
+    }
+    #intro {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+    }
+    .APOD {
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+
+
+
+    
+    
+ }
+
+@media all and (max-width: 480px) {
+
+    .headline{
+        font-size: 5rem;
+        font-family: sofia-pro;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: .24em;
+        line-height: 10;
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    .APOD {
+        
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    
+    
+   
+    
+    #intro #divmed p {
+        font-size: 8px;
+        word-spacing: 1.5px;
+    }
+
+    #intro #divmed{
+        text-align: center;
+        margin: 10px;
+    }
+    #intro {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+    }
+ }
+.parallax
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+a {
+    color: black;
+    
+}
+a:hover {
+    color: rgb(87, 87, 87);
+    outline: none;
+    text-decoration: none;
+
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+.overflow{
+    height: 200vh;
+    background: white;
+
+}
+
+
+
+#arrow:hover{
+    outline: none;
+    text-decoration: none;
+    transform: translateY(5px);
+
+}
+#arrow:active{
+    outline: none;
+    text-decoration: none;
+    transform: translateY(5px);
+    
+}
+#arrow:focus{
+    outline: none;
+    text-decoration: none;
+
+}
+
+#intro{
+    margin-top: 100px;
+}
+#intro h2{
+    font-family: sofia-pro;
+    text-transform: uppercase;
+    font-size: 4em;
+    text-align: center;
+    
+
+}
+
+.centeredrow{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+#intro #divmed{
+    text-align: center;
+    margin: 20px;
+}
+
+#intro #divmed p {
+    font-size: 28px;
+    word-spacing: 1.5px;
+    font-family: sofia-pro;
+}
+
+.footer-copyright{
+    bottom: 0;
+    text-align: center;
+    background: white;
+    color: rgb(34, 34, 34);
+    margin-bottom: 0;
+
+
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    border: 1px solid #adadad;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #eeeeee;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: #b0b0b0;
+  }
+
+
+  .polaroid {
+    align-items: center;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+  #apodp {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  #apodp h4{
+      font-style: italic;
+      letter-spacing: .24em;
+  }
+
+
+  
+.APOD{
+    margin: 20px;
+    word-spacing: 2px;
+    padding: 5px;
+    margin-top: 250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+
+}
+.APOD h2{
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: .24em;
+    text-align: center;
+}
+
+.APOD p{
+    font-family: sofia-pro;
+    font-size: 18px;
+    letter-spacing: .14em;
+    
+    
+}
+
+.imgapod{
+    margin-left: 50px;
+    margin-top: 40px;
+    
+}
+.imgapod img{
+    width: 600px;
+    height: 350px;
+    transition: 400ms;
+}
