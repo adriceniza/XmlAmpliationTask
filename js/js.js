@@ -41,4 +41,5 @@ function useApi(data) {
     document.getElementById("title").innerHTML += data.title;
 
     document.getElementById("content").innerHTML += `<img  id="apodimg" class="img-fluid rounded"  src="${data.url}" alt="nasaapi"></img>;`
+    document.getElementById("explanation").innerHTML += data.explanation;
 };
