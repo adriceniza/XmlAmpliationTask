@@ -55,9 +55,9 @@ async function changeday(event){
 
 function useApi(data) {
 
-    document.getElementById("title").innerHTML += data.title;
+    document.getElementById("title").innerHTML = data.title;
 
     document.getElementById("content").innerHTML = `<img  id="apodimg" class="img-fluid rounded"  src="${data.url}" alt="nasaapi"></img>;`
-    document.getElementById("explanation").innerHTML += data.explanation;
-    document.getElementById("footer").innerHTML += data.copyright + ' © 2021';
+    document.getElementById("explanation").innerHTML = data.explanation;
+    document.getElementById("footer").innerHTML = data.copyright + ' © 2021';
 };
