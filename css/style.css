@@ -110,8 +110,7 @@ html{
     }
     .APOD {
         
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        display: flex;
         }
 
 
@@ -135,8 +134,7 @@ html{
     
     .APOD {
         
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    display: flex;
     }
     
     
@@ -299,7 +297,7 @@ a:focus {
     margin: 20px;
     word-spacing: 2px;
     padding: 5px;
-    margin-top: 250px;
+    margin-top: 50px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -326,7 +324,7 @@ a:focus {
 
 .imgapod{
     margin-left: 50px;
-    margin-top: 40px;
+    margin-top: 70px !important;
     
 }
 .imgapod img{

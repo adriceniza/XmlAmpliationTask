@@ -16,9 +16,10 @@ function parallax(){
 
 
 function initialize() {
-
-
     sendApiRequest();
+
+
+    
 }
 
 
@@ -31,6 +32,22 @@ async function sendApiRequest() {
 
     let data = await response.json();
 
+    console.log("Data object ->")
+    console.log(data);
+
+    useApi(data);
+}
+
+
+async function changeday(event){
+    var day = event.target.value;
+    let nasa_key = 'MbAJsBq0FyTfvPhk20u3Jci6uojEN8KgG8MrGQan';
+    let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${nasa_key}&date=${day}`);
+    console.log(response);
+
+    let data = await response.json();
+
+    console.log("Data object ->")
     console.log(data);
 
     useApi(data);
@@ -40,6 +57,7 @@ function useApi(data) {
 
     document.getElementById("title").innerHTML += data.title;
 
-    document.getElementById("content").innerHTML += `<img  id="apodimg" class="img-fluid rounded"  src="${data.url}" alt="nasaapi"></img>;`
+    document.getElementById("content").innerHTML = `<img  id="apodimg" class="img-fluid rounded"  src="${data.url}" alt="nasaapi"></img>;`
     document.getElementById("explanation").innerHTML += data.explanation;
+    document.getElementById("footer").innerHTML += data.copyright + ' © 2021';
 };
