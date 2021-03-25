@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meteor</title>
+    <title>APOD - Adrián Ceniza</title>
     <link rel="shortcut icon" type="image/png" href="img/rocket.png">
 
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
@@ -38,7 +38,7 @@
         
         <div class="text-wrapper">
             
-            <h1 class="headline ">Meteor</h1>
+            <h1 class="headline ">APOD</h1>
             <a id="introbtn" href="#intro"><img id="arrow" src="img/downarrow.png" height="50" width="50" class="parallax-1" alt="arrow"></a>
             
             
@@ -55,27 +55,38 @@
             
             <div  class="div"></div>
         </section>
-        
+
         <section class="APOD">
-            <div class="hidden"></div>
             <div class="imgapod" id="apodp">
                 <h2>Astronomy picture of the day</h2>
 
-                <label style="font-size: 18px;" for="day">Choose a day to see their apod</label>
-                <input type="date" id="day" onchange="changeday(event)"  name="day">
-
+                <div class="chooseday">
+                    <label style="font-size: 18px;" for="day">Choose a day to see their apod</label>
+                    <input type="date" id="day" onchange="changeday(event)"  name="day">
+                </div>
+                
 
                
             </div>
+        </section>
+        
+        <section class="APOD">
+            
+
+            
             <div class="imgapod">
                 
-                <div id="content"></div>
+                <div id="loading"  class="loading hidden"></div>
+                <p class="bold" id="fecha"></p>
+                <div id="content">
+                    
+                </div>
+                
+
                 <h2 id="title"></h2>
                 <p  style="line-height: normal; margin-top: 10px;"  id="explanation"></p>
             </div>
-            
-            
-            <div class="hidden"></div>
+
             
         </section>
 

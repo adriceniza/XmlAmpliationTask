@@ -54,7 +54,9 @@ html{
 
 
 
-
+.hidden{
+    display: none;
+}
 
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -132,10 +134,6 @@ html{
         color: white;
     }
     
-    .APOD {
-        
-    display: flex;
-    }
     
     
    
@@ -245,9 +243,11 @@ a:focus {
 }
 
 .footer-copyright{
-    bottom: 0;
+
+    position: body absolute ;
+    left: 50%;
+    bottom: 0 ;
     text-align: center;
-    background: white;
     color: rgb(34, 34, 34);
     margin-bottom: 0;
 
@@ -303,8 +303,7 @@ a:focus {
     align-items: center;
     
     
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    display: flex;
 
 }
 .APOD h2{
@@ -323,12 +322,61 @@ a:focus {
 }
 
 .imgapod{
-    margin-left: 50px;
-    margin-top: 70px !important;
+    margin: 50px;
+    margin-top: 10px !important;
+    
+
+    
     
 }
 .imgapod img{
     width: 600px;
     height: 350px;
     transition: 400ms;
+}
+
+#title {
+    margin-top: 50px;
+}
+
+
+#explanation{
+    margin-top: 60px;
+    margin: 120px;
+    font-weight:lighter;
+    font-size: 24px;
+
+}
+
+.chooseday{
+    margin: 40px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#loading {
+    position: relative;
+    justify-content:center;
+    align-items: center;
+    
+    width: 4rem;
+    height: 4rem;
+    border: 5px solid #f3f3f3;
+    border-top:  6px solid rgb(0, 140, 255);
+    border-radius: 100%;
+    margin: auto;
+    animation: spin 1s infinite linear;
+
+}
+
+@keyframes spin{
+    from {
+
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
